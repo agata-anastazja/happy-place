@@ -1,21 +1,20 @@
 # HappyPlace
 
-**TODO: Add description**
+Simple app that helps users plan a last-minute holiday by displaying which is
+the sunniest/coolest/rainiest city in Europe right now.
 
-## Installation
+It's using [https://openweathermap.org/]
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `happy_place` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:happy_place, "~> 0.1.0"}
-  ]
-end
+To run it, you need to:
+- create a secrets.exs file and save your open weather map api key like so 
 ```
+config :happy_place, 
+   api_access_token: "example api key"
+   
+```
+- install dependecies using
+```
+mix deps.get
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/happy_place](https://hexdocs.pm/happy_place).
+```
 
