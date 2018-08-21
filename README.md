@@ -18,3 +18,5 @@ mix deps.get
 
 ```
 
+Assumptions: 
+Throughout the program I am using city ids relevant to specific cities in open weather map api instead of cities names, because there are more then one instance of some of the bigger cities in the api.
