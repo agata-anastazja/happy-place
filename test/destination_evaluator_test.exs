@@ -30,19 +30,29 @@ defmodule DestinationEvaluatorTest do
                 humidity: 59,
                 id: 2950159,
                 name: "Berlin",
-                temperature: 289.13
+                temperature: 189.13
               }
             ]
-  
-    test "with the hottest city" do
+  describe "hottest_coldest_rainiest_map returns a map with" do
+    test "the hottest city" do
+      city_weathers_map = DestinationEvaluator.hottest_coldest_rainiest_map(@fake_city_weathers)
+      assert city_weathers_map[:hottest_city] == %CityWeather{
+        humidity: 77,
+        id: 3088171,
+        name: "Poznan",
+        temperature: 388.15
+      }
+    end
+    
+    test "the coldest city" do
         city_weathers_map = DestinationEvaluator.hottest_coldest_rainiest_map(@fake_city_weathers)
-        assert city_weathers_map[:hottest_city] == %CityWeather{
-          humidity: 77,
-          id: 3088171,
-          name: "Poznan",
-          temperature: 388.15
+        assert city_weathers_map[:coldest_city] == %CityWeather{
+          humidity: 59,
+          id: 2950159,
+          name: "Berlin",
+          temperature: 189.13
         }
-
+      end
   end
 end 
 
