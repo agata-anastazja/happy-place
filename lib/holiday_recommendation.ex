@@ -8,13 +8,9 @@ defmodule HolidayRecommendation do
     )
   end
   
-  defp make_holiday_recommendation_json(city_weather_list) do
-    DestinationEvaluator.hottest_coldest_rainiest_map(city_weather_list)
-  end
-  
   def make_holiday_recommendation(city_ids_list, weather_api) do
     create_list_of_city_weathers(city_ids_list, weather_api)
-    |>make_holiday_recommendation_json()
+    |> DestinationEvaluator.hottest_coldest_rainiest_map(city_weather_list)
   end
   
 end
