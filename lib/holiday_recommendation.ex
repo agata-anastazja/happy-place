@@ -8,15 +8,8 @@ defmodule HolidayRecommendation do
     )
   end
   
-  defp retrieve_result(map) do
-    {:ok, result} = map
-    result
-  end
-  
   defp make_holiday_recommendation_json(city_weather_list) do
     DestinationEvaluator.hottest_coldest_rainiest_map(city_weather_list)
-    |> Poison.encode
-    |> retrieve_result
   end
   
   def make_holiday_recommendation(city_ids_list, weather_api) do
