@@ -10,7 +10,7 @@ defmodule HolidayRecommendation do
   
   def make_holiday_recommendation(city_ids_list, weather_api) do
     create_list_of_city_weathers(city_ids_list, weather_api)
-    |> DestinationEvaluator.hottest_coldest_rainiest_map(city_weather_list)
+    |> DestinationEvaluator.hottest_coldest_rainiest_map()
   end
   
 end
