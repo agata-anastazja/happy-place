@@ -6,6 +6,9 @@ the sunniest/coolest/rainiest city in Europe right now.
 It's using [https://openweathermap.org/]
 
 ###To run it in commandline, you need to:
+- install elixir following instructions
+[https://elixir-lang.org/install.html]
+
 - create a secrets.exs file and save your open weather map api key like so
 ```
 use Mix.Config
@@ -39,4 +42,4 @@ Also, I have chosen Poznan, London, Madrid, Kiev and Berlin as default cities.
 The api requires a paid licence to make over 600 a minute, so I decided to make the comparison on a smaller scale, but if you can also pass other cities ids if you want to find out about other cities.
 
 ###What I would do next?
-I would add error handling using genServer and surpervisor mechanism to catch if my processes are breaking. 
+I would add error handling using genServer and surpervisor mechanism to catch if my processes are breaking.
