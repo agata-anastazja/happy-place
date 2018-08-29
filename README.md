@@ -39,7 +39,7 @@ mix escript.build
 Throughout the program I am using city ids relevant to specific cities in open weather map api instead of cities names, because there are more then one instance of some of the bigger cities in the api.
 
 Also, I have chosen Poznan, London, Madrid, Kiev and Berlin as default cities.
-The api requires a paid licence to make over 600 a minute, so I decided to make the comparison on a smaller scale, but if you can also pass other cities ids if you want to find out about other cities.
+The api requires a paid licence to make over 600 a minute, so I decided to make the comparison on a smaller scale, but you can also pass other cities ids if you want to.
 
 ### What I would do next?
 I would parallelise http requests and add error handling using GenServer and surpervisor mechanism.
