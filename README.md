@@ -5,7 +5,7 @@ the sunniest/coolest/rainiest city in Europe right now.
 
 It's using [https://openweathermap.org/]
 
-### To run it in commandline, you need to:
+### To run it in commandline, you need to :
 - install elixir following instructions
 [https://elixir-lang.org/install.html]
 
